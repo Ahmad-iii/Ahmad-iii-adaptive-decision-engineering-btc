@@ -1,0 +1,15 @@
+config,decision_layer,final_equity,peak_equity,total_return_pct,win_rate_pct,trades_taken,total_candles,participation_pct,max_drawdown_pct,sharpe,profit_factor,calmar,annualised_return_pct
+Baseline,"Simple majority vote, fixed $1000",4134.67,4136.33,313.47,51.63,35903,35903,100.0,11.57,0.0307,1.111,26.44,305.9
+V4,"Graduated weights 1-5, streak protection",4487.10,4494.48,348.71,51.89,35903,35903,100.0,10.75,0.0310,1.124,31.65,340.3
+V5,Proportional (percentage-of-equity) sizing,1996.99,1999.96,99.70,51.89,35903,35903,100.0,3.77,0.0343,1.118,25.84,97.3
+V6,"Milestone tier sizing, soft circuit breaker",4679.16,4688.76,367.92,51.89,35903,35903,100.0,8.56,0.0339,1.125,41.97,359.1
+V7,External SMA trend filter,1098.02,1146.79,9.80,47.36,2555,35903,7.1,8.27,0.0043,1.055,1.16,9.6
+V8,80% consensus gate,4448.94,4460.60,344.89,52.04,24900,35903,69.4,9.05,0.0355,1.161,37.19,336.6
+V9,"Dynamic velocity scoring, 0.3x-2.0x",4822.42,4836.30,382.24,52.04,24900,35903,69.4,8.47,0.0328,1.144,44.05,373.1
+V10,Tightened risk thresholds,3665.43,3680.18,266.54,52.04,24900,35903,69.4,7.34,0.0339,1.136,35.43,260.1
+V11,Extreme conviction sizing,6282.17,6322.98,528.22,52.04,24900,35903,69.4,13.80,0.0297,1.154,37.37,515.5
+V12,"Signal affirmer, permissive threshold",4724.30,4753.85,372.43,52.43,15291,35903,42.6,10.04,0.0321,1.183,36.22,363.5
+V13,Affirmer with restored trade volume,5346.97,5375.04,434.70,52.04,24900,35903,69.4,11.81,0.0310,1.149,35.93,424.2
+V14,"Logistic-regression affirmer, strict",1833.73,1849.91,83.37,56.33,3071,26927,11.4,7.45,0.0217,1.234,14.57,108.5
+V15,"Online Bayesian affirmer, Laplace-smoothed",1106.26,1106.26,10.63,56.31,1101,35903,3.1,3.08,0.0102,1.187,3.37,10.4
+V16,"Adaptive window, loss dampening, PnL regime",4734.36,4748.32,373.44,52.04,24900,35903,69.4,7.63,0.0359,1.154,47.75,364.5
